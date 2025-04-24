@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #008000, #FFFFFF, #D2232C);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    background: rgb(91, 197, 151);
+    color: rgb(6, 5, 5);
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 60px;
+    margin-top: 10%;
+}
+
+.imgp{
+    height: 300px;
+    width: 550px;
+    border-radius: 100px;
+}
+/* Para telas menores (como smartphones de até 375px de largura) */

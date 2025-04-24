@@ -1,0 +1,35 @@
+Para iniciar o server, utilize o comando>
+ngrok config add-authtoken 2uuwImuuL7AsNSA2oKC4s8CxvEO_2D7JJKjW2RKBJDeD9jL3U
+    -ngrok http http://localhost:8080
+
+Para fazer teste e apresentar o programa somente!
+
+ ----------------PARA USAR UM SERVIDOR----------------
+
+Altere a porta de 80 para ------->8080
+
+ Acessando o diretorio a seguir>
+C:\xampp
+   ├── apache
+   ├── conf
+       └── httpd.conf ----->>>>arquivo para editar a porta 
+  Deve ficar asssim>>>
+                  |-----#Listen 12.34.56.78:80
+                  |-----Listen 8080
+      !!!!!!!!Savlvar!!!!!!!!!!    
+
+ ----------------PARA USAR LOCAL E FAZER ALTERAÇOES----------------
+
+ Altere a porta de 8080 para ------->80
+ Acessando o diretorio a seguir>
+C:\xampp
+   ├── apache
+   ├── conf
+       └── httpd.conf ----->>>>arquivo para editar a porta 
+
+  Deve ficar asssim>>>
+                  |-----#Listen 12.34.56.78:80
+                  |-----Listen 80     
+      !!!!!!!!Savlvar!!!!!!!!!!   
+
+

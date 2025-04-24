@@ -1,0 +1,155 @@
+
+/* Estilos CSS básicos para simular a aparência da imagem */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #008000, #FFFFFF, #D2232C);
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.dados-pessoais, .resumo-pedido, .pagamento {
+    flex: 1;
+    padding: 20px;
+}
+
+.dados-pessoais {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.resumo-pedido {
+    background: linear-gradient(to right, #FFFFFF, #e87d83);
+    border-radius: 10px;
+}
+.resumo-pedido h2{
+    text-align: center;
+}
+.resumo-pedido p{
+    text-align: center;
+}
+
+.pagamento {
+    background: linear-gradient(to left, #FFFFFF, #e87d83);
+    border-radius: 10px;
+}
+.pagamento h2{
+    text-align: center;
+}
+.pagamento p{
+    text-align: center;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: rgb(91, 197, 151);
+    color: rgb(6, 5, 5);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 26px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.pagamento-opcao {
+    background: linear-gradient(to right, #FFFFFF);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desconto {
+    background-color: #ffeb3b;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+.entrega-opcao {
+    background-color: #d8e9f7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botao-login {
+    background: linear-gradient(to left, #FFFFFF, #D2232C);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Ajustes responsivos para dispositivos pequenos (incluindo a maioria das telas de 6.0 polegadas em retrato) */
+@media screen and (max-width: 420px) { /* Aumentei para 420px para cobrir mais dispositivos */
+    .container {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        width: 95%;
+        padding: 10px; /* Reduz o espaçamento */
+    }
+
+    .dados-pessoais, .resumo-pedido, .pagamento {
+        padding: 10px; /* Reduz o preenchimento interno */
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+        font-size: 14px; /* Ajusta tamanho da fonte */
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 0.5em;
+        border-radius: 12px;
+    }
+}
+
+/* Ajustes para tablets e dispositivos médios */
+@media screen and (min-width: 221px) and (max-width: 768px) { /* Ajustei o min-width para corresponder */
+    .container {
+        width: 90%; /* Reduz a largura */
+    }
+
+    .dados-pessoais, .resumo-pedido, .pagamento {
+        padding: 15px;
+    }
+}
+
+/* Ajustes para telas maiores */
+@media screen and (min-width: 169px) and (max-width: 1200px) { /* Adicionei um min-width para evitar sobreposição */
+    .container {
+        width: 80%;
+    }
+}

@@ -1,0 +1,98 @@
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to right, #008000, #FFFFFF, #D2232C);
+
+    }
+
+    .nota-fiscal {
+        background-color: #FFFFFF;
+        text-align: center;
+        align-items: center;
+        width: 600px;
+        border: 1px solid #000;
+        border-radius: 2%;
+        padding: 20px;
+    }
+
+    .cabecalho {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+
+    .dados-cliente {
+        margin-bottom: 20px;
+    }
+
+    .itens-pedido {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .itens-pedido th, .itens-pedido td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .itens-pedido th {
+        background-color: #f0f0f0;
+    }
+
+    .total {
+        text-align: right;
+        font-weight: bold;
+    }
+    /* Ajustes responsivos para dispositivos pequenos */
+@media screen and (max-width: 375px) {
+    .nota-fiscal {
+        width: 95%; /* Ajusta a largura para dispositivos menores */
+        padding: 10px; /* Reduz o preenchimento interno */
+    }
+
+    .cabecalho h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+
+    .itens-pedido th, .itens-pedido td {
+        font-size: 12px; /* Ajusta o tamanho da fonte na tabela */
+        padding: 5px; /* Reduz o preenchimento */
+    }
+
+    .total {
+        font-size: 14px; /* Ajusta o tamanho da fonte do total */
+    }
+}
+
+/* Ajustes para tablets e dispositivos médios */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .nota-fiscal {
+        width: 80%; /* Ajusta a largura */
+    }
+
+    .cabecalho h1 {
+        font-size: 1.8em; /* Ajusta o tamanho do título */
+    }
+}
+
+/* Ajustes para telas maiores */
+@media screen and (max-width: 1200px) {
+    .nota-fiscal {
+        width: 70%;
+    }
+
+    .cabecalho h1 {
+        font-size: 2em; /* Mantém o tamanho maior para melhores telas */
+    }
+}

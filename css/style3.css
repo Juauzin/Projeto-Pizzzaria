@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #008000, #FFFFFF, #D2232C);
+}
+
+.container {
+    width: 300px;
+    background-color: #FFFFFF;    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    margin: 100px;
+    border: 1px solid #0a0a0a;  
+}
+
+.container h2 {
+    font-family: inherit;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #c4b6b6;
+}
+
+.form-group button {
+    background: rgb(91, 197, 151);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    margin-top: 10px;
+}
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: rgb(91, 197, 151);
+    color: rgb(6, 5, 5);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+#resumoPedidoDetalhado {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+}
+/* Ajustes responsivos para dispositivos pequenos */
+@media screen and (max-width: 375px) {
+    .container {
+        width: 95%; /* Ajusta a largura para ocupar quase toda a tela */
+        margin: 20px; /* Reduz as margens */
+        padding: 10px; /* Ajusta o preenchimento interno */
+    }
+
+    h2 {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+    }
+
+    .form-group input {
+        font-size: 14px; /* Ajusta o tamanho da fonte nos campos de entrada */
+        padding: 6px; /* Reduz o espaçamento interno */
+    }
+
+    button {
+        font-size: 16px; /* Reduz o tamanho da fonte dos botões */
+        padding: 0.5em;
+        border-radius: 12px; /* Menos arredondado para dispositivos menores */
+    }
+
+    #resumoPedidoDetalhado {
+        width: 90%; /* Ajusta a largura do resumo do pedido detalhado */
+        height: auto; /* Permite altura fluida */
+    }
+}
+
+/* Ajustes para tablets e dispositivos médios */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    #resumoPedidoDetalhado {
+        width: 80%;
+    }
+}
+
+/* Ajustes para telas maiores */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 22px; /* Tamanho maior para melhor leitura */
+    }
+}
