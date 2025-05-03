@@ -1,5 +1,5 @@
 # Bem-vindo ao Projeto Pizzaria Forno Di Roma! 🍕
-Este projeto foi desenvolvido com fins educativos para a disciplina de Análise e Desenvolvimento de Sistemas, ministrada pelo Professor Diego Dias Rocha na Universidade Cruzeiro do Sul.
+Este projeto foi desenvolvido com fins educativos para a disciplina de Banco de Dados, ministrada pelo Professor Diego Dias Rocha na Universidade Cruzeiro do Sul.
 
  ## Grupo de Desenvolvimento:
 
