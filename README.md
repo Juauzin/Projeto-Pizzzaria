@@ -3,15 +3,8 @@ Este projeto foi desenvolvido com fins educativos para a disciplina de Banco de 
 
  ## Grupo de Desenvolvimento:
 
-° Fábio Araújo
-
 ° João Roberto
 
-° Micael Sousa
-
-° Rafael Silva
-
-° Ruan Santos
 
 Para instalar e executar o projeto na sua máquina, confira o passo a passo detalhado na aba "Wiki". Lá, você também encontrará um vídeo demonstrativo do sistema em funcionamento! 😉
 
